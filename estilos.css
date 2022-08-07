@@ -1,0 +1,316 @@
+* {
+	margen :  0 ;
+	relleno :  0 ;
+	tamaño de caja : cuadro de borde;
+}
+
+: raíz {
+	--púrpura-oscuro :  # 170312 ;
+	--púrpura-medio :  # 33032d ;
+    --púrpura-luz :  # 531253 ;
+    --gris-luz :  # eaeaea ;
+    --blanco :  # f4fffd ;
+}
+
+cuerpo {
+	tamaño de fuente :  20 px ;
+	familia de fuentes :  'Open Sans' , sans-serif;
+}
+
+pag {
+	tamaño de fuente :  22 px ;
+}
+
+/* ------------------------- */
+/* Encabezado */
+/* ------------------------- */
+. encabezado de contenido {
+	ancho :  100 % ;
+	altura :  100 vh ;
+	imagen de fondo : url(.. / img/bg-girl.jpeg);
+	posición de fondo : centro;
+	tamaño de fondo : portada;
+	archivo adjunto de fondo : fijo;
+}
+
+. contenido-cabecera . fondo {
+	ancho :  0 % ;
+	altura :  100 % ;
+	ancho máximo :  100 % ;
+	imagen de fondo : url(.. / img/bg-top.png);
+}
+
+. contenido-cabecera . texto {
+	ancho :  calc ( 100 vw  -  20 px );
+	altura :  100 vh ;
+	tamaño de fuente :  90 px ;
+	peso de fuente :  400 ;
+	familia de fuentes :  'Noto Serif' , serif;
+	estilo de fuente : cursiva;
+	pantalla : flexible;
+	alinear elementos : centro;
+	justificar-contenido : centro;
+	color : violeta;
+	mezclar-mezclar-modo : multiplicar;
+}
+
+/* ------------------------- */
+/* BARRA DE NAVAJA */
+/* ------------------------- */
+. menú {
+	color de fondo :  var ( --purple-medium );
+	ancho :  100 % ;
+	posición : pegajosa;
+	superior :  0 ;
+	relleno :  5 px ;
+	índice z :  999 ;
+	alineación de texto : centro;
+	pantalla : flexible;
+	justificar-contenido : centro;
+	familia de fuentes :  'Noto Serif' , serif;
+	estilo de fuente : cursiva;
+	margen inferior :  60 px ;
+}
+
+. menú  un {
+	pantalla : bloque en línea;
+	relleno :  10 px  30 px ;
+	tamaño de fuente :  26 px ;
+	color de fondo :  var ( --purple-medium );
+	margen :  0  10 px ;
+	transición :  .5 s facilitar todo;
+	color :  var ( --gris claro );
+	decoración de texto : ninguno;
+}
+
+. menú  a : flotar {
+	transformar :  traducir Y ( 18 px );
+	color de fondo :  var ( --purple-light );
+}
+
+/* ------------------------- */
+/* Nosotros */
+/* ------------------------- */
+. nosotros {
+	margen inferior :  60 px ;
+}
+
+. subtítulo {
+	tamaño de fuente :  20 px ;
+	color :  var ( -púrpura-oscuro );
+	familia de fuentes :  'Noto Serif' , serif;
+	peso de fuente :  700 ;
+	índice z :  2 ;
+	transformación de texto : mayúsculas;
+	margen inferior :  20 px ;
+}
+
+. subtitulo  span {
+	color de fondo :  var ( --gris claro );
+	relleno :  0  15 px ;
+	índice z :  99 ;
+	posición : relativa;
+}
+
+. subtitulo :: despues {
+	contenido :  "" ;
+	pantalla : bloque en línea;
+	altura :  2 píxeles ;
+	ancho :  100 % ;
+	fondo :  var ( -púrpura-oscuro );
+	posición : relativa;
+	arriba :  -29 px ;
+	índice z :  1 ;
+}
+
+. nosotros . título {
+	ancho :  70 % ;
+	tamaño de fuente :  44 px ;
+	transformación de texto : mayúsculas;
+	pantalla : bloque en línea;
+	margen inferior :  50 px ;
+}
+
+. nosotros . enlace {
+	pantalla : bloque en línea;
+	margen superior :  40 px ;
+	color :  var ( -púrpura-luz );
+	peso de fuente :  700 ;
+	borde inferior :  1 px sólido transparente;
+	transición :  .3 s facilitar todo;
+}
+
+. nosotros . enlace : flotar {
+	decoración de texto : ninguno;
+	espaciado entre letras :  3 px ;
+	borde inferior :  1 px sólido var ( -púrpura-luz );
+}
+
+/* ------------------------- */
+/* Productos */
+/* ------------------------- */
+. productos {
+	fondo :  var ( --gris claro );
+	relleno :  20 px ;
+	margen inferior :  60 px ;
+}
+
+. productos _ título {
+	ancho :  70 % ;
+	tamaño de fuente :  44 px ;
+	transformación de texto : mayúsculas;
+	pantalla : bloque en línea;
+	margen inferior :  50 px ;
+}
+
+. productos _ producto {
+	posición : relativa;
+	ancho :  100 % ;
+}
+
+. productos _ superposición {
+	ancho :  0 % ;
+	altura :  100 % ;
+	posición : absoluta;
+	inferior :  0 ;
+	izquierda :  0 ;
+	derecha :  0 ;
+	fondo :  var ( --púrpura-luz );
+	desbordamiento : oculto;
+	transición :  0,5 s de facilidad;
+}
+
+. productos _ producto : flotar . superposición {
+	ancho :  100 % ;
+	opacidad :  .8 ;
+}
+
+. productos _ producto _ superposición de texto {
+	superior :  50 % ;
+	izquierda :  50 % ;
+	posición : absoluta;
+	espacio en blanco : ahora rap;
+	color :  var ( --blanco );
+	tamaño de fuente :  18 px ;
+	transformar :  traducir ( -50 % ,  -50 % );
+	desbordamiento : oculto;
+	borde superior :  1 px sólido # fff ;
+	borde inferior :  1 px sólido # fff ;
+}
+
+. productos _ btn-productos {
+	color de fondo :  var ( --purple-light );
+	color :  #fff ; _
+	relleno :  7 px  20 px ;
+	transformación de texto : mayúsculas;
+	tamaño de fuente :  16 px ;
+	borde :  2 px sólido transparente;
+	transición :  0,3 s de facilidad;
+}
+
+. productos _ btn-productos : hover {
+	color de fondo : transparente;
+	borde :  var sólido de 2 px ( --purple-light );
+	color :  var ( -púrpura-luz );
+}
+
+/* ------------------------- */
+/* separadores */
+/* ------------------------- */
+. separador {
+	ancho :  100 % ;
+	altura :  250 píxeles ;
+	imagen de fondo :  url ( '../img/bg-separator.jpeg' );
+	posición de fondo : centro;
+	tamaño de fondo : portada;
+	archivo adjunto de fondo : fijo;
+	margen inferior :  60 px ;
+}
+
+. separador  p {
+	altura :  100 % ;
+	ancho :  100 % ;
+	pantalla : flexible;
+	alinear elementos : centro;
+	justificar-contenido : centro;
+	tamaño de fuente :  24 px ;
+	familia de fuentes :  'Noto Serif' , serif;
+	relleno :  10 px ;
+}
+
+/* ------------------------- */
+/* Acerca de */
+/* ------------------------- */
+. acerca-de {
+	margen inferior :  60 px ;
+}
+
+/* ------------------------- */
+/* Galería */
+/* ------------------------- */
+. galería {
+	margen inferior :  60 px ;
+}
+
+. galeria  img {
+	altura :  100 % ;
+	ancho :  100 % ;
+	ajuste de objeto : cubierta;
+}
+
+. contacto {
+	margen inferior :  60 px ;
+}
+
+. redes-sociales {
+	relleno :  10 px ;
+	color de fondo :  var ( --purple-light );
+}
+
+. redes-sociales  img {
+	relleno :  5 px ;
+	borde-radio :  100 % ;
+	ancho :  50 píxeles ;
+	transición :  .3 s facilitar todo;
+}
+
+. redes-sociales  img : hover {
+	transformar :  escala ( 1.2 );
+}
+
+/* ------------------------- */
+/* Preguntas de los medios */
+/* ------------------------- */
+Pantalla @media y ( ancho máximo :  992 px ) {
+	pag {
+		tamaño de fuente :  18 px ;
+	}
+
+	. contenido-cabecera . texto {
+		tamaño de fuente :  60 px ;
+	}
+
+	. menú  un {
+		tamaño de fuente :  20 px ;
+	}
+
+	. nosotros . título ,
+	. productos _ título {
+		tamaño de fuente :  30 px ;
+	}
+
+}
+pie de página
+© 2022 GitHub, Inc.
+Pie de página de navegación
+términos
+Privacidad
+Seguridad
+Estado
+Documentos
+Póngase en contacto con GitHub
+Precios
+API
+Capacitación
+Blog
+Sobre
